@@ -1,53 +1,80 @@
 <html>
     <head>
         <title>Manutics - SE Profile</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <h1>Manutics Software Engineer Profile</h1>
         <main>
             <section>
-                <nav>
+                <nav id="navigation">
                     <ul>
                         <li><a href="#home">Home</a></li>
                         <li><a href="#aboutMe">About Me</a></li>
                         <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contactMe">Contact Me</a></li>
                     </ul>
                 </nav>
             </section>
             <section>
-                <div style="width:500px; height:200px;">
-                    <h2 id="home">Home</h2>
-                    <p>Hello, I'm Fajri Pangestu. I'm Software Engineer in Manutics.
-                </div>
+                <h2 id="home">Home</h2>
+                <p style="font-size:40px;">Hello, I'm Fajri Pangestu. I'm Software Engineer in Manutics.</p>
             </section>
             <section>
-                <div style="width:500px; height:200px;">
-                    <h2 id="aboutMe">About Me</h2>
-                    <p>I'm experienced in designing and developing software features that improve system functionality and user experience. Skilled in analyzing requirements, translating them into scalable technical solutions, and implementing clean, maintainable code. Experienced in collaborating with cross-functional teams, performing code reviews, testing features, and ensuring reliable deployment. Passionate about solving problems, optimizing performance, and continuously improving software quality.</p>
-                </div>
-                
+                <h2 id="aboutMe">About Me</h2>
+                <p>I'm experienced in designing and developing software features that improve system functionality and user experience. Skilled in analyzing requirements, translating them into scalable technical solutions, and implementing clean, maintainable code. Experienced in collaborating with cross-functional teams, performing code reviews, testing features, and ensuring reliable deployment. Passionate about solving problems, optimizing performance, and continuously improving software quality.</p>  
             </section>
             <section>
                 <h2 id="projects">Projects</h2>
                 <ol>
                     <li>Feature Implemented
-                        <ol>
+                        <ul>
                             <li>Markdown file that describe the application</li>
                             <li>Website from html and CSS that contain developer profile</li>
-                        </ol>
+                        </ul>
                     </li>
                     <li>Future Project
-                        <ol>
+                        <ul>
                             <li>Register feature</li>
                             <li>Login Feature</li>
                             <li>Data Input</li>
                             <li>Data automation</li>
                             <li>Data Processing</li>
                             <li>Data Visualization</li>
-                        </ol>
+                        </ul>
                     </li>
                 </ol>
             </section>
+            <section class="">
+                <h2 id="contactMe">Contact me</h2>    
+                <form>
+                    <label for="name">Full Name</label><br>
+                    <input type="text" id="name" name="name" placeholder="Your name" required/>
+                    <br>
+                    <label for="email">Email</label><br>
+                    <input type="text" id="email" name="email" placeholder="Your email" required/>
+                    <br>
+                    <label for="message">Message</label><br>
+                    <textarea type="text" id="message" name="message" placeholder="Write your message" required cols="30" rows="10"></textarea>
+                    <br>
+                    <button type="submit" class="myButton">Send</button>
+                    <button type="reset" class="myButton">Reset</button>
+                </form>
+           </section>
+           <section id="myContact">
+                <h2>You can reach me at :</h2>
+                <table>
+                    <tr>
+                        <th>Name :</th>
+                        <td>Fajri Pangestu</td>
+                    </tr>
+                    <tr>
+                        <th>Email :</th>
+                        <td>fajripangestu62@gmail.com</td>
+                    </tr>
+                </table>
+                <br>
+           </section> 
         </main>
     </body>
     <footer>
