@@ -7,11 +7,12 @@
 1. Markdown
 2. HTML
 3. Github
-4. CSS
+4. CSS (Cascading Style Sheets)
 
 ## Feature Implemented
 1. Markdown file that describe the application
 2. Website from html and CSS that contain developer profile
+3. Contact form : You can ask anything about our company through this contact form
 
 ## Future Project
 1. Register feature
@@ -21,7 +22,8 @@
 5. Data Processing
 6. Data Visualization
 
+## You can access the website through this deployed link
+- https://github.com/Revou-FSSE-Feb26/milestone-1-fajripangestu
+
 ## Image Source
 - https://idn.freepik.com/ikon-ikon/pabrik
-
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/2AGu9A8s)

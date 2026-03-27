@@ -1,36 +1,41 @@
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Manutics - SE Profile</title>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
+        <header>
         <h1>Manutics Software Engineer Profile</h1>
+            <nav id="navigation">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#aboutMe">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contactMe">Contact Me</a></li>
+                </ul>
+            </nav>
+        </header>
         <main>
             <section>
-                <nav id="navigation">
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#aboutMe">About Me</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contactMe">Contact Me</a></li>
-                    </ul>
-                </nav>
-            </section>
-            <section>
                 <h2 id="home">Home</h2>
-                <p style="font-size:40px;">Hello, I'm Fajri Pangestu. I'm Software Engineer in Manutics.</p>
+                <p id="introduction">Hello, I'm Fajri Pangestu. I'm Software Engineer in Manutics.</p>
             </section>
             <section>
                 <h2 id="aboutMe">About Me</h2>
-                <p>I'm experienced in designing and developing software features that improve system functionality and user experience. Skilled in analyzing requirements, translating them into scalable technical solutions, and implementing clean, maintainable code. Experienced in collaborating with cross-functional teams, performing code reviews, testing features, and ensuring reliable deployment. Passionate about solving problems, optimizing performance, and continuously improving software quality.</p>  
+                <p class="content">I'm experienced in designing and developing software features that improve system functionality and user experience. Skilled in analyzing requirements, translating them into scalable technical solutions, and implementing clean, maintainable code. Experienced in collaborating with cross-functional teams, performing code reviews, testing features, and ensuring reliable deployment. Passionate about solving problems, optimizing performance, and continuously improving software quality.</p>  
             </section>
             <section>
                 <h2 id="projects">Projects</h2>
-                <ol>
+                <ol class="content">
                     <li>Feature Implemented
                         <ul>
                             <li>Markdown file that describe the application</li>
                             <li>Website from html and CSS that contain developer profile</li>
+                            <li>Navigation : Easily surf web application with navigation</li>
+                            <li>Contact form : You can ask anything about our company through this contact form</li>
+                            <li>Contact table : You can reach me through this contact table</li>
                         </ul>
                     </li>
                     <li>Future Project
@@ -45,43 +50,40 @@
                     </li>
                 </ol>
             </section>
-            <section class="">
+            <section id="contactForm">
                 <h2 id="contactMe">Contact me</h2>    
-                <form>
-                    <label for="name">Full Name</label><br>
+                <form class="content">
+                    <label for="name">Full Name</label>
                     <input type="text" id="name" name="name" placeholder="Your name" required/>
-                    <br>
-                    <label for="email">Email</label><br>
-                    <input type="text" id="email" name="email" placeholder="Your email" required/>
-                    <br>
-                    <label for="message">Message</label><br>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your email" required/>
+                    <label for="message">Message</label>
                     <textarea type="text" id="message" name="message" placeholder="Write your message" required cols="30" rows="10"></textarea>
-                    <br>
                     <button type="submit" class="myButton">Send</button>
                     <button type="reset" class="myButton">Reset</button>
                 </form>
            </section>
            <section id="myContact">
                 <h2>You can reach me at :</h2>
-                <table>
+                <table class="content">
                     <tr>
-                        <th>Name :</th>
+                        <th>Name</th>
                         <td>Fajri Pangestu</td>
                     </tr>
                     <tr>
-                        <th>Email :</th>
+                        <th>Email</th>
                         <td>fajripangestu62@gmail.com</td>
                     </tr>
                     <tr>
-                        <th>Github :</th>
+                        <th>Github</th>
                         <td><a href="https://github.com/Revou-FSSE-Feb26/milestone-1-fajripangestu.git">My Repository</a></td>
                     </tr>
                 </table>
-                <br>
            </section> 
         </main>
+        <footer>
+            <p>Copyright 2026 : Fajri Pangestu</p>
+        </footer>
     </body>
-    <footer>
-        <p>Copyright 2026 : Fajri Pangestu</p>
-    </footer>
+
 </html>
