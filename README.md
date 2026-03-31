@@ -23,7 +23,7 @@
 6. Data Visualization
 
 ## You can access the website through this deployed link
-- https://github.com/Revou-FSSE-Feb26/milestone-1-fajripangestu
+- https://revou-fsse-feb26.github.io/milestone-1-fajripangestu/
 
 ## Image Source
 - https://idn.freepik.com/ikon-ikon/pabrik
