@@ -12,7 +12,9 @@
 ## Feature Implemented
 1. Markdown file that describe the application
 2. Website from html and CSS that contain developer profile
-3. Contact form : You can ask anything about our company through this contact form
+3. Navigation : Easily surf web application with navigation
+4. Contact form : You can ask anything about our company through this contact form
+5. Contact table : You can reach me through this contact table
 
 ## Future Project
 1. Register feature
