@@ -8,29 +8,36 @@
     <body>
         <header>
         <h1>Manutics Software Engineer Profile</h1>
-            <nav id="navigation">
-                <ul>
+            <nav class="navigationBar" id="myNavigationBar">
+                <ul class="navigationLinks">
                     <li id="ManuticsNav"><a href="#home">Manutics</a></li>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#aboutMe">About Me</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contactMe">Contact Me</a></li>
+                    <li class="myButton"><a href="#home">Sign Up</a></li>
+                    <li class="myButton"><a href="#home">Login</a></li>
                     <li><input type="text" id="searchNav" name="name" placeholder="Search..."/></li>
                 </ul>
+                <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776; <!-- hamburger icon --></a>
             </nav>
         </header>
         <main>
-            <section>
-                <h2 id="home">Home</h2>
-                <img id="ProfilePhoto" src="Profile Photo.jpeg" alt="Profile Photo" width=200px><span id="introduction">Hello, I'm Fajri Pangestu. I'm Software Engineer in Manutics.</span>
+            <section class="hero">
+                <div id="home" class="image-container">
+                    <img id="ProfilePhoto" src="Profile Photo.jpeg" alt="Profile Photo" width=200px>
+                </div>
+                <div class="text-container">
+                    <p>Hello, I'm Fajri Pangestu. I'm Software Engineer in Manutics.</p>
+                </div>
             </section>
-            <section>
+            <section class="content">
                 <h2 id="aboutMe">About Me</h2>
-                <p class="content">I'm experienced in designing and developing software features that improve system functionality and user experience. Skilled in analyzing requirements, translating them into scalable technical solutions, and implementing clean, maintainable code. Experienced in collaborating with cross-functional teams, performing code reviews, testing features, and ensuring reliable deployment. Passionate about solving problems, optimizing performance, and continuously improving software quality.</p>  
+                <p>I'm experienced in designing and developing software features that improve system functionality and user experience. Skilled in analyzing requirements, translating them into scalable technical solutions, and implementing clean, maintainable code. Experienced in collaborating with cross-functional teams, performing code reviews, testing features, and ensuring reliable deployment. Passionate about solving problems, optimizing performance, and continuously improving software quality.</p>  
             </section>
-            <section>
+            <section class="content">
                 <h2 id="projects">Projects</h2>
-                <ol class="content">
+                <ol class="card">
                     <li>Feature Implemented
                         <ul>
                             <li>Markdown file that describe the application</li>
@@ -54,7 +61,7 @@
             </section>
             <section id="contactForm">
                 <h2 id="contactMe">Contact me</h2>    
-                <form class="content">
+                <form>
                     <label for="name">Full Name</label>
                     <input type="text" id="name" name="name" placeholder="Your name" required/>
                     <label for="email">Email</label>
@@ -86,6 +93,7 @@
         <footer>
             <p>Copyright 2026 : Fajri Pangestu</p>
         </footer>
+        <script src="script.js"></script>
     </body>
 
 </html>

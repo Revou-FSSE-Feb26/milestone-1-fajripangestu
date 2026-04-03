@@ -1,127 +1,127 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-#ManuticsNav{
-  font-family: "Oswald","Sans-serif";
-  font-size:30px;
-}
-
-body{
-  font-family: "Open Sans","Sans-serif";
-  margin-top: 200px;
-  line-height: 2;
-  margin-top: 10px;
-  margin-right: 20px;
-  margin-bottom: 10px;
-  margin-left: 20px;
-
-  padding-top: 10px;
-  padding-right: 20px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-}
-
-    h1{
-        margin-top:60px;
-        border-top-left-radius: 25px;
-        border-top-right-radius: 25px;
-        padding-bottom:0px;
-        margin-bottom:0px;
-    }
-
-    h2{
-        border-radius: 25px;
-    }
-
-    h1, h2{
-        padding-top: 10px;
-        padding-right: 20px;
-        padding-bottom: 10px;
-        padding-left: 20px;
-    }
-
-    .myButton{
-        border-radius: 25px;
-        margin-top: 10px;
-        margin-right: 20px;
-        margin-bottom: 10px;
-        margin-left: 20px;
-
-        padding-top: 10px;
-        padding-right: 20px;
-        padding-bottom: 10px;
-        padding-left: 20px;
-    }
-
-    footer{
-        background-color:forestgreen;
-        border-radius: 25px;
-        padding-top: 10px;
-        padding-right: 20px;
-        padding-bottom: 200px;
-        padding-left: 20px;
-    }
-
-.content{
-  margin:20px;
-}
-
-#introduction{
-  font-size:40px;
-  margin:20px;
-}
-
-
-nav ul {
-  list-style: none;
+body {
   margin: 0;
-  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
+}
+
+/* Navbar dasar */
+.navigationBar {
   display: flex;
-  
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
-  
-  border:1px solid #0056b3;
-  border-radius: 50px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-  overflow:hidden;
+  background-color: #333;
+  padding: 10px 20px;
 }
 
-nav ul li {
-  margin-right: 40px;
-  margin-left: 40px;
+.navigationLinks {
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
-nav ul li a:hover{
-  color:#0056b3;
-}
-
-nav ul li a{
-  display: block;
-  padding: 14px 20px;
-  background-color: white;
-  color: black;
+.navigationLinks a {
+  color: white;
   text-decoration: none;
+  padding: 8px;
 }
 
-nav {
-  position: fixed;     /* membuat posisi tetap */
-  top: 0;              /* menempel di bagian atas */
-  left: 0;             /* menempel di sisi kiri */
-  width: 100%;         /* lebar penuh */
-  background-color: white; /* warna latar */
-  color: white;        /* warna teks */
-  padding: 10px 20px;  /* jarak dalam */
-  z-index: 1000;       /* agar tidak tertutup elemen lain */
+/* Hamburger icon hanya muncul di layar kecil */
+.icon {
+  display: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsif */
+@media screen and (max-width: 600px) {
+  .navigationLinks {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    width: 100%;
+  }
+  .navigationLinks.active {
+    display: flex;
+  }
+  .icon {
+    display: block;
+  }
+}
+
+/* Hero Section */
+
+
+.hero{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.text-container {
+  max-width: 500px;
+}
+
+/* Responsif untuk layar kecil */
+@media screen and (max-width: 768px) {
+  .heroresponsive-section {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Content Section */
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  flex: 1 1 300px; /* fleksibel, minimum 300px */
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Responsif */
+@media screen and (max-width: 768px) {
+  .hero {
+    padding: 40px 10px;
+  }
+  .content {
+    flex-direction: column;
+  }
 }
 
 form {
-  margin: 20px auto;
+  max-width: 400px;
+  margin: auto;
   padding: 20px;
+  background: #f9f9f9;
   border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 label {
@@ -136,17 +136,12 @@ input, textarea {
   margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 4px;
-}
-
-#searchNav{
-  border: 1px solid blue;
-  border-radius: 20px;
+  transition: border 0.3s ease;
 }
 
 input:focus, textarea:focus {
-  border-color: #007BFF;
+  border: 1px solid #007BFF;
   outline: none;
-  box-shadow: 0 0 5px rgba(0,123,255,0.5);
 }
 
 button {
@@ -163,33 +158,27 @@ button:hover {
 }
 
 table {
-  border-collapse: collapse; /* gabungkan border */
   width: 100%;
+  border-collapse: collapse; /* gabungkan border */
   margin: 20px 0;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-}
-
-thead th {
-  background-color: #007BFF;
-  color: white;
-  padding: 10px;
+  font-size: 16px;
   text-align: left;
 }
 
-td, th {
+th, td {
+  padding: 12px 15px;
   border: 1px solid #ddd;
-  padding: 8px;
 }
 
-img{
-  border: 1px solid blue;
-  border-radius: 20px;
-  padding: 5px;
-  width: 150px;
+thead {
+  background-color: #007BFF;
+  color: white;
 }
 
-img:hover {
-  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* zebra stripes */
 }
 
+tbody tr:hover {
+  background-color: #f1f1f1; /* efek hover */
+}
