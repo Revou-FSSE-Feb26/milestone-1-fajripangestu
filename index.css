@@ -87,7 +87,6 @@ section li{
 .text-container {
   max-width: 500px;
   color:white;
-  font-size: xx-large;
 }
 
 @media screen and (max-width: 768px) {
